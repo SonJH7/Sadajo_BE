@@ -12,7 +12,7 @@ router.get('/', postController.getAllPosts);
 router.post('/', postController.createPost);
 
 // 게시글 삭제
-router.delete('/:postId', postController.deletePost);
+router.delete('/:postId/:userId', postController.deletePost);
 
 // 게시글 수정
 router.put('/:postId', postController.updatePost);
